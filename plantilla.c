@@ -7,6 +7,20 @@ Programacion 1 - Ingenieria en computacion
 
 #include <stdio.h>
 
+/*
+Consigna:
+
+*/
+
+/*
+descripcion
+@param nombre descripcion
+@returns descripcion retorno
+Precondiciones de la funcion
+Postcondiciones de la funcion
+*/
+
+
 int main()
 {
    //COMPLETAR
