@@ -43,12 +43,13 @@ int contador_circular_alternativo_dos(int i, int limite)
 /**
  * Mantiene a i entre 0 y limite
  * @param i el valor del 'contador' a incrementar
- * @param cota superior, no inclusive.
+ * @param limite, cota superior, no inclusive.
  * @returns i incrementado en 1, 
  *              devuelve 0 cuando i es >= limite o < 0;
  * @precondiciones i puede ser cualquier numero entero
- * @postcondiciones i incrementado en 1 salvo las condiciones
- *                      indicadas en el retorno.
+ * @postcondiciones i igual o mayor a 0 
+ *                   incrementado en 1 salvo las condiciones indicadas
+ *                   en el retorno.
  */
 
 int contador_circular(int i, int limite)
