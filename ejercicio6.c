@@ -7,13 +7,13 @@ Programacion 1 - Ingenieria en computacion
 
 #include <stdio.h>
 
-/*
+/**
 Consigna:
 Escribir una función que, mediante restas sucesivas, 
 obtenga el valor del cociente y el resto de dos números enteros.
 */
 
-/*
+/**
 Esta funcion indica el signo del numero
 @param numero a ser evaluado
 @returns -1 si el signo de numero es negativo

@@ -7,7 +7,7 @@ Programacion 1 - Ingenieria en computacion
 
 #include <stdio.h>
 
-/*
+/**
 Consigna:
 Escribir una función que retorne 1 si un número entero 
 indicado es Primo y 0 cuando no lo sea.
@@ -15,7 +15,7 @@ indicado es Primo y 0 cuando no lo sea.
 Un número es primo cuando sus divisores son solo si mismo y 1.
 */
 
-/*
+/**
 Esta funcion indica si el numero es primo.
 
 Esto es que la division del numero da resto cero con 1 y si mismo.
