@@ -9,7 +9,11 @@ Programacion 1 - Ingenieria en computacion
 
 /*
 Consigna:
-Implementar una función que, usando lazos, permita obtener el factorial de un número entero positivo.
+Implementar una función que, usando lazos, permita obtener el 
+factorial de un número entero positivo.
+
+Nota: Tecnicamente, el factorial mas grande con una variable de tipo
+unsigned long long int es de 19! = '121645100408832000' aproximadamente.
 */
 
 #include <stdio.h>
@@ -22,7 +26,6 @@ Implementar una función que, usando lazos, permita obtener el factorial de un n
  *
  *                     
  * Precondiciones: numero debe ser un número entero positivo o cero.
- *                       el numero mas grande admitido es de 19!
  * Postcondiciones: La función devuelve el factorial de numero.
  *                  Si numero es negativo, la función devuelve 0.
  *                  El factorial de 0 es 1 (0! = 1).
@@ -57,7 +60,7 @@ int main() {
         if (numero >= 0) {
             printf("El factorial de %d es %llu\n", numero, resultado);
         } else {
-            printf("No se puede calcular el factorial de un número negativo (%d)\n", numero);
+            printf("No se puede calcular el factorial de un numero negativo (%d)\n", numero);
         }
     }
 
