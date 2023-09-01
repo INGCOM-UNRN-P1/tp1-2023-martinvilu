@@ -17,34 +17,38 @@ Siendo n inclusive y m no inclusive.
 
 /*
 Esta funcion suma entre n y m
-@param n, la cota inferior; inclusive
-@param m, la cota superior; no inclusive
+@param n, la primera cota
+@param m, la segunda cota, inclusive
 @returns la suma de los numero comprendidos entre n y m.
+            en donde el numero mayor no sera inclusive.
 
-Precondiciones n tiene que ser menor que m
-Postcondiciones el resultado es un valor entero, 
-            con 0 como error. (lo cual es medio incorrecto)
+Precondiciones n y m son dos numeros enteros
+Postcondiciones el resultado es un valor entero.
 */
 int suma_rango(int n, int m)
 {
     int suma = 0;
-    int i;
-    
     if (n < m)
     {
-        for (i = n; i < m; i++)
+        for (; n <= m; n++)
         {
-            suma = suma + i;
+            suma = suma + n;
         }
     }
-    else
+    else if (n > m)
     {
-        printf("Error: m(%d), es mayor o igual que n(%d)", m, n);
+        for (; m < n; m++)
+        {
+            suma = suma + m;
+        }
+    }
+    else // n == m
+    {
         suma = 0;
     }
-
     return suma;
 }
+
 
 int main() {
     int inicio = -5;
