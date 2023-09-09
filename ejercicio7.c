@@ -45,7 +45,8 @@ int es_primo(unsigned int numero)
     return bandera;
 }
 
-int main() {
+int main()
+{
     unsigned int valor;
     
     valor = 7;

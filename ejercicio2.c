@@ -15,11 +15,13 @@ Programacion 1 - Ingenieria en computacion
   @pre el valor de la temperatura no puede ser menor a -371
   @post la temperatura obtenida será obtenida a partir del argumento
  */
-float centigrados_a_fahrenheit(float centigrados) {
+float centigrados_a_fahrenheit(float centigrados)
+{
     return (centigrados * 1.8f) + 32.0f;
 }
 
-float fahrenheit_a_centigrados(float fahrenheit) {
+float fahrenheit_a_centigrados(float fahrenheit)
+{
     float retorno = (fahrenheit - 32.0f) / 1.8f; 
     return retorno;
 }

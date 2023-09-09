@@ -44,7 +44,8 @@ int signo(int numero)
     return retorno;
 }
 
-int main() {
+int main()
+{
     int valor = -5;
     int resultado = signo(valor);
     printf("negativo %d => %d\n", valor, resultado);

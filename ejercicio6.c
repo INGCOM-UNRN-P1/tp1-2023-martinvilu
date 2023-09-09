@@ -53,7 +53,8 @@ int signo(int numero)
  * Postcondiciones El resultado sera identico al calculado con los operadores
  *   tradicionales.
  */
-int cociente_lento(int dividendo, int divisor) {
+int cociente_lento(int dividendo, int divisor) 
+{
     int cociente = 0;
     int retorno;
     int signo_dividendo = signo(dividendo);

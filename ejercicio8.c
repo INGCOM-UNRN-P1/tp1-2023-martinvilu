@@ -50,7 +50,8 @@ int suma_rango(int n, int m)
 }
 
 
-int main() {
+int main() 
+{
     int inicio = -5;
     int fin = 10;
 
