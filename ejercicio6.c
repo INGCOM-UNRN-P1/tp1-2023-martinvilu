@@ -56,6 +56,8 @@ int signo(int numero)
 int cociente_lento(int dividendo, int divisor) {
     int cociente = 0;
     int retorno;
+    int signo_dividendo = signo(dividendo);
+    int signo_divisor = signo(divisor);
     if (divisor == 0)
     {
         printf("Error: Divisor no puede ser cero.\n");
@@ -63,9 +65,6 @@ int cociente_lento(int dividendo, int divisor) {
     }
     else
     {
-        int signo_dividendo = signo(dividendo);
-        int signo_divisor = signo(divisor);
-
         dividendo = dividendo * signo_dividendo;
         divisor = divisor * signo_divisor;
 
@@ -82,6 +81,8 @@ int cociente_lento(int dividendo, int divisor) {
 int resto_lento(int dividendo, int divisor)
 {
     int retorno;
+    int signo_dividendo = signo(dividendo);
+    int signo_divisor = signo(divisor);
     if (divisor == 0)
     {
         printf("Error: Divisor no puede ser cero.\n");
@@ -89,14 +90,11 @@ int resto_lento(int dividendo, int divisor)
     }
     else
     {
-
-        int signo_dividendo = signo(dividendo);
-        int signo_divisor = signo(divisor);
-
         dividendo = dividendo * signo_dividendo;
         divisor = divisor * signo_divisor;
 
-        while (dividendo >= divisor) {
+        while (dividendo >= divisor)
+        {
             dividendo -= divisor;
         }
         retorno = dividendo * signo_dividendo;
