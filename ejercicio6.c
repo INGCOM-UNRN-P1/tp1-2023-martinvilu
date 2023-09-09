@@ -55,47 +55,53 @@ int signo(int numero)
  */
 int cociente_lento(int dividendo, int divisor) {
     int cociente = 0;
-
+    int retorno;
     if (divisor == 0)
     {
         printf("Error: Divisor no puede ser cero.\n");
-        return 0;
+        retorno = 0;
     }
-
-    int signo_dividendo = signo(dividendo);
-    int signo_divisor = signo(divisor);
-
-    dividendo = dividendo * signo_dividendo;
-    divisor = divisor * signo_divisor;
-
-    while (dividendo >= divisor)
+    else
     {
-        dividendo -= divisor;
-        cociente++;
-    }
+        int signo_dividendo = signo(dividendo);
+        int signo_divisor = signo(divisor);
 
-    return cociente * signo_dividendo * signo_divisor;
+        dividendo = dividendo * signo_dividendo;
+        divisor = divisor * signo_divisor;
+
+        while (dividendo >= divisor)
+        {
+            dividendo -= divisor;
+            cociente++;
+        }
+        retorno = cociente * signo_dividendo * signo_divisor;
+    }
+    return retorno;
 }
 
 int resto_lento(int dividendo, int divisor)
 {
+    int retorno;
     if (divisor == 0)
     {
         printf("Error: Divisor no puede ser cero.\n");
-        return 0;
+        retorno = 0;
     }
+    else
+    {
 
-    int signo_dividendo = signo(dividendo);
-    int signo_divisor = signo(divisor);
+        int signo_dividendo = signo(dividendo);
+        int signo_divisor = signo(divisor);
 
-    dividendo = dividendo * signo_dividendo;
-    divisor = divisor * signo_divisor;
+        dividendo = dividendo * signo_dividendo;
+        divisor = divisor * signo_divisor;
 
-    while (dividendo >= divisor) {
-        dividendo -= divisor;
+        while (dividendo >= divisor) {
+            dividendo -= divisor;
+        }
+        retorno = dividendo * signo_dividendo;
     }
-
-    return dividendo * signo_dividendo;
+    return retorno;
 }
 
 int main() {
