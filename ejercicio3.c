@@ -31,15 +31,15 @@ int signo(int numero)
     int retorno;
     if (numero < 0)
     {
-        retorno = -1;
+        retorno = NEGATIVO;
     }
     else if (numero > 0)
     {
-        retorno = 1;
+        retorno = POSITIVO;
     }
     else
     {
-        retorno = 0;
+        retorno = CERO;
     }
     return retorno;
 }
