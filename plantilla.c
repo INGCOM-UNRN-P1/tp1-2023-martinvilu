@@ -1,11 +1,25 @@
 /*
-COMPLETAR CON EL NOMBRE DEL EJERCICIO
-COMPLETAR CON NOMBRE Y APELLIDO
-Comision COMPLETAR - 2023
+Trabajo Practico 1 - Ejercicio
+Profe Martín
+Comision Profes - 2023
 Programacion 1 - Ingenieria en computacion
 */
 
 #include <stdio.h>
+
+/*
+Consigna:
+
+*/
+
+/*
+descripcion
+@param nombre descripcion
+@returns descripcion retorno
+Precondiciones de la funcion
+Postcondiciones de la funcion
+*/
+
 
 int main()
 {
